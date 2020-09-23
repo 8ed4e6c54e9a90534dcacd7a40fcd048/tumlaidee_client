@@ -1,2 +1,2 @@
-# pos_client
-POS client of Tum Lai Dee.
+# Tumlaidee Client
+Client of Tum Lai Dee.
