@@ -7,7 +7,7 @@ import Nav from '../template/Nav'
 import Menu from '../template/Menu'
 
 import '../assets/styles.css'
-
+import '../assets/fontawesome-5/css/all.css'
 // import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
