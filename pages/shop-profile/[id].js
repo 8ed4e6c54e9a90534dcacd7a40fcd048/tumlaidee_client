@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch';
-
+import '../assets/fontawesome-5/css/all.css'
 const ProductView = props => {
     console.log(props);
     return (

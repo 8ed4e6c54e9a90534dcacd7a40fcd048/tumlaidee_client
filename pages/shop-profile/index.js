@@ -1,18 +1,22 @@
 import fetch from 'isomorphic-unfetch'
-import ShopProfile from './shop-profile';
+import ShopProfile from '../../components/shop/ShopProfile'
+import ShopModel from '../../models/ShopModel'
+
+const shop_model = new ShopModel;
 
 const Index = (props) => (
-    <ShopProfile />
+    <ShopProfile shop_detail={props.shop_detail} />
 
 )
 
+
 Index.getInitialProps = async function () {
-    // const res = await fetch('https://my-json-server.typicode.com/mood-board/demo/products');
-    // const data = await res.json();
-    // console.log("data : ", data)
-    let data = [];
+    let shop_detail = await shop_model.getShopDetailBy();
+    // console.log(shop_detail);
+    // let data = [];
     return {
-        products: data
+        shop_detail: shop_detail
     };
 };
+
 export default Index
